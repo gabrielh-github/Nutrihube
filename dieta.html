@@ -72,6 +72,7 @@
     </header> <!--(Gabriel H.) Fim do Header -->
 
     <script src="script.js"></script>
+    <script src="tmb.js"></script>
 
     <!--(Gabriel H.) Banner rotativo(carrossel) -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -101,6 +102,35 @@
         </a>
     </div>
     <!--(Gabriel H.) Fim do banner rotativo(carrossel) -->
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <!--(Richard) Começando o form -->
+    <form id="tmbForm">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade">
+        <br>
+        <label for="sexo">Sexo:</label>
+        <select id="sexo">
+             <option value="masculino"></option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+        <br>
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" >
+     <br>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso">
+        <br>
+        <br>
+        <button type="button" onclick="calcularTMB()">Calcular TMB</button>
+    </form>
+    <!--(Richard) Fim do form -->
+    
+    <div id="result"></div>
 
     <!--(João Paulo)código usado para a exibição do footer responsivo-->
     <main></main>
