@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box; /* Para garantir que padding e border sejam incluídos nas dimensões */
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%; /* Altura total da tela */
+    font-family: 'Roboto', sans-serif; /* Fonte da Google */
+    background-color: #f5f5f5; /* Cor de fundo leve */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100%; /* Ocupa toda a altura da tela */
+    padding: 0 20px; /* Mantém um pequeno padding nas laterais */
+    width: 100%; /* Largura total */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Tamanho do título */
+    text-align: center; /* Centraliza o texto */
+}
+
+.info, .consideracoes {
+    background: white; /* Fundo branco para seções */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%; /* Largura total da tela */
+    max-width: 100%; /* Largura máxima */
+    text-align: justify; /* Justifica o texto */
+}
+
+.calculator {
+    background: #fff; /* Fundo branco */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 30px; /* Padding interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    width: 90%; /* Largura responsiva */
+    max-width: 400px; /* Largura máxima */
+    text-align: center; /* Centraliza texto */
+    margin: 20px 0; /* Espaço acima e abaixo */
+    border: 2px solid #f0ad4e; /* Borda amarela */
+}
+
+.calculator input[type="number"],
+.calculator input[type="text"] {
+    width: 100%; /* Largura dos inputs */
+    padding: 10px; /* Padding interno */
+    margin: 10px 0; /* Margem entre os inputs */
+    border: 1px solid #ccc; /* Borda dos inputs */
+    border-radius: 5px; /* Cantos arredondados nos inputs */
+    transition: border 0.3s; /* Transição suave da borda */
+}
+
+.calculator input[type="number"]:focus,
+.calculator input[type="text"]:focus {
+    border: 1px solid #f0ad4e; /* Borda amarela ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+button {
+    background-color: #f0ad4e; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 12px 20px; /* Padding do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor para pointer */
+    font-size: 1.2rem; /* Tamanho do texto do botão */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+button:hover {
+    background-color: #ec971f; /* Tom mais escuro no hover */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+.resultado {
+    margin-top: 20px; /* Espaço acima do resultado */
+    font-size: 1.5rem; /* Tamanho do texto do resultado */
+    color: #333; /* Cor do texto do resultado */
+    font-weight: bold; /* Negrito */
+}
+
+.alert {
+    margin-top: 10px; /* Margem acima da mensagem de alerta */
+    color: #d9534f; /* Vermelho */
+    font-weight: bold; /* Negrito */
+}
