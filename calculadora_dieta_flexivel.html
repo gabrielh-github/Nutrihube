@@ -127,17 +127,20 @@
         
        <!-- <p>Idade:</p> -->
        <!-- <input type="number" id="altura" min="1" placeholder="exemplo: 17"><br /> <br /> -->
-
-        <b style="color: darkred">Taxa Metabólica Basal (TMB):</b> <br />
-        <input type="text" id="TMB" placeholder="exemplo: 69 kcal"><br />  
-        <I>Para saber sua Taxa Metábolica Basal acesse -> <a href="dieta.html">aqui.</a></I> <br /> <br />
+        <div style="border: 2px solid rgb(1, 255, 1); padding: 10px; border-radius: 100px; width: 25%;  margin-left: auto; margin-right: auto; ">
+            <b style="color: darkgreen">Taxa Metabólica Basal (TMB):</b> <br />
+            <input type="text" id="TMB" placeholder="exemplo: 69 kcal"><br />  
+        </div>
+            <I style="color: gray; font-size: 90%;">Para saber sua Taxa Metábolica Basal acesse -> <a href="dieta.html">aqui.</a></I> <br /> <br /> <br />
  
        <!-- Input tipo range usando javascript para exibição do número selecionado -->
-        <b style="color: darkred">Nível de Atividade</b> <br />
-        <div class="range" style="border: 2px solid darkred; padding: 50px; border-radius: 10px; width: 30%;  margin-left: auto; margin-right: auto; ">
+        <b style="color: darkgreen">Nível de Atividade</b> <br />
+        <div class="range" style="border: 2px solid rgb(1, 255, 1); padding: 20px; border-radius: 10px; width: 25%;  margin-left: auto; margin-right: auto; ">
             <input type="range" id="atividade" name="atividade" min="1" max="5" value="1" oninput="numAtual(this.value)"> <br />
-            <label for="atividade"><span id="numSelecionado">1</span></label><br>
+            <label for="atividade"><span id="numSelecionado" style="background-color: darkgreen; color: white; padding: 80%; border-radius: 100px;">1</span></label><br>
         </div>
+        <I style="color: gray; font-size: 90%;">1-sedentário: praticamente não faz nada |<br> 2-Levemente ativo: exercícios leves 1-3x por semana |<br> 3-Moderadamente ativo: exercícios moderados de 3-5x por semana |<br> 4-Muito ativo: exercícios pesados/esportes 6-7x por semana |<br> 5-Extremamente ativo: exercícios muito pesados, treinando duas vezes ao dia, provavelmente não é seu caso, vai por mim.<br>
+        </I>
     <script>
         function numAtual(value) {
             document.getElementById('numSelecionado').textContent = value;
